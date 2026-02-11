@@ -1,0 +1,42 @@
+QUESTION PRACTICE
+
+### conditional statements (if/elif/else) 
+
+1. take a number from user. print "positive" if number > 0, otherwise print "not positive"
+2. take age from user. print "adult" if age >= 18, else print "minor"
+3. take a number. print "even" if number % 2 == 0, else print "odd"
+4. take marks (0–100). print "pass" if marks >= 40, else "fail"
+5. take temperature. if > 30 print "hot", if between 15–30 print "normal", else "cold"
+6. take character. print "vowel" if it is a,e,i,o,u (lowercase only), else print "consonant"
+7. take three numbers. print the largest one
+8. take year. print "leap year" if divisible by 4 but not by 100 unless also by 400
+9. take side1, side2, side3. check if they can form a triangle (sum of any two sides > third side)
+10. take salary. calculate tax:  
+    - 0 if salary ≤ 300000  
+    - 5% if 300001–600000  
+    - 10% if 600001–900000  
+    - 15% if > 900000  
+    print tax amount
+11. take three angles of triangle. print "equilateral", "isosceles", "scalene" or "not a triangle"
+12. take day number (1–7). print day name ("monday" for 1, "sunday" for 7), else "invalid day"
+
+### loops 
+
+1. print numbers from 1 to 10 using for loop
+2. print "hello" 5 times using while loop
+3. print even numbers from 2 to 20 using for loop
+4. take n from user. print sum of numbers from 1 to n (using loop)
+5. take n. print multiplication table of n from 1 to 10
+6. using while loop: keep asking user for number until they enter 0, then print "stopped"
+7. print first 10 fibonacci numbers (0, 1, 1, 2, 3, 5, 8, ...)
+8. take n. count how many digits are in n (using while loop)
+9. take string. count how many vowels are in it using for loop
+10. take number n. check if it is prime (print "prime" or "not prime")
+11. using nested for loop: print this pattern (5 rows)  
+    *  
+    **  
+    ***  
+    ****  
+    *****
+12. using while loop: find reverse of a number  
+    example: input 1234 → output 4321
