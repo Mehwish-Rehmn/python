@@ -5,24 +5,15 @@ QUESTION PRACTICE
 
 
 1. create a function called greet that prints "hello everyone" when called
-
 2. create a function called add_two that takes two numbers and prints their sum
-
 3. create a function called say_name that takes one parameter (name) and prints "hi name!"
-
 4. create a function called is_even that takes a number and returns True if even, False if odd
-
 5. create a function called square that takes a number and returns its square
-
 6. create a function called max_of_two that takes two numbers and returns the bigger one
-
 7. create a function called calculate_total that takes three numbers (price, quantity, discount)  
    discount is in percent (example 10 for 10%)  
    return final amount after discount
-
-8. create a function called count_vowels that takes a string and returns how many vowels (a e i o u) it has  
-   (lowercase only)
-
+   
 9. create a function called reverse_string that takes a string and returns it backwards  
    (do not use [::-1], use loop)
 
@@ -52,4 +43,15 @@ def is_even(number):
 print(is_even(10))   # True
 print(is_even(7))    # False
 
+### lambda, map(), filter()
 
+1. use map + lambda to double every number in [1, 3, 5, 7]  
+2. use filter + lambda to keep only odd numbers from [2, 4, 7, 9, 12]  
+3. use map + lambda to make all strings uppercase: ["hi", "python", "code"]  
+4. use filter + lambda to keep numbers > 0 from [-5, 3, -2, 8, 0]  
+5. use map + lambda to add 100 to each item in [10, 20, 30]  
+6. use filter + lambda to keep strings longer than 4 chars: ["cat", "tiger", "dog", "lion"]  
+7. use map + lambda + two lists: multiply [1,2,3] with [10,20,30]  
+8. use filter + map: first keep > 10 from [5,12,8,15,3], then add 5 to each  
+9. use filter + map: keep words starting with "s" from ["sun", "rain", "snow", "wind"], then make uppercase  
+10. filter even numbers from range(1,21), then map to their square, convert to list
