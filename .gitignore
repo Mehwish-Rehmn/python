@@ -4,6 +4,8 @@
 
 git rm --cached .DS_Store
 
+__pycache__/
+.venv/
 
 
 
