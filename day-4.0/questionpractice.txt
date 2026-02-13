@@ -1,0 +1,48 @@
+## practice questions on importing modules/packages + virtual environments**  
+
+
+1. Create a file called utils.py.
+Inside it, write a function double(n) that returns n * 2.
+In main.py, import the whole module and print the result of double(10)
+
+2. In the same utils.py, add a variable:
+author = "coder"
+Now in main.py, import only the variable author and print it.
+
+3. Create a folder named helpers.
+Inside it:
+- Add an empty __init__.py file
+- Create a file greet.py
+- Inside greet.py, create a function hello(name)
+In main.py, import hello from helpers.greet and call it with your own name.
+
+4. Write the exact terminal command to create a virtual environment named venv-learn using Python’s built-in `venv` module.
+
+5. After activating venv-learn, write the command to install these two packages:
+- requests
+- python-dotenv
+
+6. After installing the packages, write the command to generate a requirements.txt file with exact frozen versions.
+
+7. You receive a project folder that already contains a requirements.txt file.
+   After creating and activating a new virtual environment, what command will you run to install all dependencies?
+
+8. Create a file colors.py with this list:
+python
+rainbow = ["red","orange","yellow","green","blue","indigo","violet"]
+In main.py, import rainbow and print only the colors that start with the letter `"b"`.
+
+9. Create a package named tools with:
+- calc.py: function `power(base, exp)`
+- text.py: function `shout(txt)`
+Modify __init__.py so that in main.py you can write:
+from tools import power, shout
+
+10. Create this structure:
+mylib/
+├── __init__.py
+├── mathf.py     (add(a,b), multiply(a,b))
+└── fmt.py       (capitalize(s))
+Modify __init__.py so that you can directly write:
+from mylib import add, capitalize
+without importing from submodules manually.
