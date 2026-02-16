@@ -1,0 +1,96 @@
+Question Practice
+
+### Level 1 –  Basic 
+
+1. Make a class called `Student`.  
+   It should have name and marks.  
+   Make a method `show_result()` that prints: "name got marks marks".  
+   Create 2 students and call the method on both.
+
+2. Create class `Mobile`.  
+   It has brand and battery (starts at 100).  
+   Make method `use(minutes)` → battery decreases by minutes // 10 (1% every 10 min).  
+   Make method `charge()` → battery back to 100.  
+   Create one mobile, use it for 45 minutes, print battery, then charge it.
+
+3. Class `Book`.  
+   Has title, author, price.  
+   Method `discount(percent)` → reduce price by that percent.  
+   Method `show_info()` → print all details.  
+   Create a book, apply 20% discount, show info.
+
+### Level 2 – Methods that change things + basic logic
+
+4. Class `Counter`.  
+   Has value = 0.  
+   Methods: up() → +1, down() → -1 (but never below 0), reset() → 0.  
+   Create counter, up 5 times, down 3 times, reset, print final value.
+
+5. Class `Temperature`.  
+   Has celsius.  
+   Methods: to_fahrenheit() → return (celsius * 9/5) + 32  
+   to_kelvin() → celsius + 273.15  
+   Create object 30 °C, print both conversions.
+
+6. Class `Playlist`.  
+   Has songs = [] (empty list).  
+   Method add_song(name) → add to list.  
+   Method play() → print "Now playing: song" for each song.  
+   Add 4 songs, then play.
+
+### Level 3 – Inheritance 
+
+7. Parent class `Vehicle` with method move() → print "moving".  
+   Child class `Car` → override move() to "driving fast".  
+   Child class `Bicycle` → override move() to "pedaling".  
+   Create one car, one bicycle, call move() on both.
+
+8. Parent class `Person` with name and age.  
+   Child class `Employee` adds salary.  
+   Use super() in __init__ of Employee.  
+   Method show() → print name, age, salary.  
+   Create one employee and show.
+
+9. Parent class `Animal` with eat() → "eating".  
+   Child class `Dog` overrides eat() to "eating dog food".  
+   Child class `Cat` overrides eat() to "eating fish".  
+   Create list of animals, loop and call eat() on each.
+
+### Level 4 – Encapsulation
+
+10. Class `Wallet`.  
+    Private __money.  
+    Methods: add(amount), spend(amount) → only if enough, get_balance().  
+    Try to spend more than available → print "not enough".  
+    Create wallet, add 2000, spend 5000 (should fail), spend 800, print balance.
+
+11. Class `Phone`.  
+    Private __battery.  
+    Public method use_app() → battery -5 (if battery >=5).  
+    If battery <5 → print "low battery".  
+    Method charge() → battery = 100.  
+    Create phone, use app 15 times, see what happens.
+
+### Level 5 – Polymorphism + Operator Overloading
+
+12. Classes `Dog`, `Cat`, `Bird` all inherit from `Animal`.  
+    Each has its own make_sound() method ("woof", "meow", "tweet").  
+    Make list of different animals, loop and call make_sound() on each.
+
+13. Class `Vector` with x, y.  
+    Overload + so v1 + v2 gives new vector with x1+x2, y1+y2.  
+    Overload == to check if two vectors are same.  
+    Create two vectors, add them, compare with another.
+
+14. Class `Fraction` with num, den.  
+    Overload + to add two fractions (proper fraction addition).  
+    Overload == to check equality (cross multiply).  
+    Print like "3/4".  
+    Try 1/2 + 1/4 = 3/4.
+
+15. Class `ShoppingCart`.  
+    Private list __items.  
+    Overload len() → return number of items.  
+    Overload [] → cart[0] gives first item name.  
+    Add method add(item).  
+    Create cart, add 4 items, print len(cart), print cart[1].

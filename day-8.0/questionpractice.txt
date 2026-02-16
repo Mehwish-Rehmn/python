@@ -1,0 +1,99 @@
+QUESTION Practice
+
+Iterators (questions 1–4)
+
+1. Make a class `ReverseList` that takes a list in `__init__`  
+   and lets you loop over it in reverse order using `for` loop.  
+   (Hint: use `__iter__` and `__next__`)
+
+   Example:
+
+   r = ReverseList([10, 20, 30, 40])
+   for x in r:
+       print(x)   # 40 30 20 10
+  
+2. Create a class `EvenNumbers` that starts from 0 and gives even numbers forever.  
+   Use it like:
+
+   evens = EvenNumbers()
+   print(next(evens))  # 0
+   print(next(evens))  # 2
+   print(next(evens))  # 4
+
+
+3. Take any list and make an iterator that only gives even-indexed items (0, 2, 4…).  
+   Example:
+
+   it = EvenIndex(["a", "b", "c", "d", "e"])
+   print(list(it))   # ['a', 'c', 'e']
+
+
+4. Make an iterator `Countdown(n)` that counts down from n to 1.  
+   After 1 it should raise StopIteration.
+
+### Generators (questions 5–8)
+
+5. Write a generator function `countdown(n)` that yields numbers from n down to 1.  
+   Use it in a for loop and also with next().
+
+   for num in countdown(5):
+       print(num)  
+
+
+6. Create a generator `fibonacci()` that gives fibonacci numbers forever (0, 1, 1, 2, 3, 5, 8…).  
+   Print first 10 numbers using next() or for loop.
+
+7. Make a generator expression (with parentheses) that gives squares of even numbers from 0 to 20.  
+   Then convert it to list and print.
+
+8. Write a generator `read_lines(filename)` that reads a text file line by line and yields each line (stripped).  
+   Use it to print only lines longer than 10 characters.
+
+### Decorators (questions 9–12)
+
+9. Make a decorator `greet` that prints "welcome!" before and "thank you!" after any function runs.
+   @greet
+   def say_hi(name):
+       print(f"hi {name}")
+
+   say_hi("wish")
+   # welcome!
+   # hi mehwish
+   # thank you!
+
+
+10. Write a decorator `twice` that runs the function two times automatically.
+
+    @twice
+    def shout():
+        print("hello!!")
+
+    shout()
+    # hello!!
+    # hello!!
+
+
+11. Make a decorator `timer` that prints how many seconds the function took to run.
+
+    @timer
+    def slow():
+        time.sleep(1.5)
+        print("done")
+
+    slow()
+    # done
+    # slow took 1.502 seconds
+
+
+12. Create a decorator `only_if_logged_in` that checks if a dictionary `user` has `"logged_in": True`.  
+    If not → print "please login" and don’t run the function.  
+    If yes → run the function.
+
+    @only_if_logged_in
+    def see_profile(user):
+        print(f"hello {user['name']}")
+
+    see_profile({"name": "mwsh", "logged_in": True})   
+    see_profile({"name": "guest", "logged_in": False})    
+
+
