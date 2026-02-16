@@ -1,5 +1,0 @@
-hello this is my first note
-i am learning python
-today is day 15
-new line added later
-feeling good today

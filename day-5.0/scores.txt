@@ -1,2 +1,0 @@
-math:85
-science:92

@@ -18,6 +18,9 @@ notes.txt
 
 # macOS system files
 .DS_Store
+# Ignore generated files inside day-5.0
+day-5.0/*.txt
+day-5.0/output/
 
 
 
