@@ -11,6 +11,29 @@ backup/
 
 # Ignore log files
 *.log
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+activity.log
+app.log
+app_all.log
+debug.log
+test.log
+everything.log
+errors_only.log
+log.txt
+
+# Databases
+*.db
+
+# CSV test files
+*.csv
+
+# OS
+.DS_Store
 
 # Ignore temp notes
 log.txt
